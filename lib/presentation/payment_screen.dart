@@ -11,7 +11,12 @@ class PaymentScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back_ios_new_rounded),
+          onPressed: () => context.pop(),
+        ),
         centerTitle: true,
+        backgroundColor: Colors.white,
         surfaceTintColor: Colors.white,
         title: const Text("Заказ оплачен"),
       ),
