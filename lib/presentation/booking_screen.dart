@@ -377,8 +377,8 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
                     child: Container(
                       decoration: BoxDecoration(
                         color: _isPhoneError
-                            ? Color.fromARGB(38, 235, 87, 87)
-                            : Color.fromARGB(255, 246, 246, 249),
+                            ? const Color.fromARGB(38, 235, 87, 87)
+                            : const Color.fromARGB(255, 246, 246, 249),
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Padding(
@@ -408,8 +408,8 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
                   child: Container(
                     decoration: BoxDecoration(
                       color: _isEmailError
-                          ? Color.fromARGB(38, 235, 87, 87)
-                          : Color.fromARGB(255, 246, 246, 249),
+                          ? const Color.fromARGB(38, 235, 87, 87)
+                          : const Color.fromARGB(255, 246, 246, 249),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Padding(
@@ -713,12 +713,12 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
       child: Container(
         decoration: BoxDecoration(
           color: _isFieldError[id] ?? false
-              ? Color.fromARGB(38, 235, 87, 87)
-              : Color.fromARGB(255, 246, 246, 249),
+              ? const Color.fromARGB(38, 235, 87, 87)
+              : const Color.fromARGB(255, 246, 246, 249),
           borderRadius: BorderRadius.circular(10),
         ),
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 2),
+          padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 4),
           child: TextFormField(
             validator: (String? value) {
               final res = validator(value);

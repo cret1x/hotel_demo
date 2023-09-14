@@ -8,6 +8,10 @@ class TouristsListProvider extends StateNotifier<List<Tourist>> {
     return state.every((tourist) => tourist.validate());
   }
 
+  void clear() {
+    state = [Tourist(id: 0, expanded: true)];
+  }
+
   void add() {
     int prevId = state.last.id;
     state = [...state, Tourist(id: prevId + 1, expanded: true)];

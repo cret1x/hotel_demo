@@ -10,4 +10,4 @@ final bookingProvider = FutureProvider<BookingInfo>((ref) {
   return bookingInfoRepository.getBookingInfo();
 });
 
-final touristListProvider = StateNotifierProvider<TouristsListProvider, List<Tourist>>((ref) => TouristsListProvider());
+final touristListProvider = StateNotifierProvider.autoDispose<TouristsListProvider, List<Tourist>>((ref) => TouristsListProvider());
